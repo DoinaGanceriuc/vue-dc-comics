@@ -1,5 +1,5 @@
 <template>
-  <div class="">
+  <div class="container">
     <header id="site_header">
       <div class="logo">
         <img src="../assets/dc-logo.png" alt="" width="60">
@@ -39,6 +39,7 @@ ul {
   list-style: none;
   li {
     padding: 0 1rem;
+    font-size: $font_size_header;
   }
   .list_active {
       color: $color_primary;
