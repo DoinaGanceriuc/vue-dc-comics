@@ -2,8 +2,9 @@
   <div class="container">
     <header id="site_header">
       <div class="logo">
-        <img src="../assets/dc-logo.png" alt="" width="60">
+        <img src="../assets/dc-logo.png" alt="logo dc azzurro" width="60">
       </div>
+      <!-- /.logo -->
       <ul>
         <li>CHARACTERS</li>
         <li class="list_active">COMICS</li>
@@ -17,8 +18,9 @@
         <li>SHOP</li>
       </ul>
     </header>
-
+<!-- /#site_header -->
   </div>
+  <!-- /.container -->
 </template>
 
 <script>
@@ -31,6 +33,7 @@
   justify-content: space-between;
   align-items: end;
   padding-top: 2rem;
+/* logo */
 .logo {
   padding-bottom: 1rem;
 }

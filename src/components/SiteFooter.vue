@@ -20,6 +20,7 @@
             <li><a href="#">Shop DC Collectibles</a></li>
           </ul>
          </div>
+         <!-- /.col-4 -->
          <div class="col-4">
             <h3>DC</h3>
           <ul>
@@ -36,6 +37,7 @@
             <li><a href="#">Contact Us</a></li>
           </ul>
          </div >
+         <!-- /.col-4 -->
          <div class="col-4">
             <h3>SITES</h3>
           <ul>
@@ -46,11 +48,13 @@
             <li><a href="#">DC Power Visa</a></li>
           </ul>
          </div>
+         <!-- /.col-4 -->
          </div>
          <!-- /.row -->
          <div class="footer_logo">
          </div>
        </div>
+        <!-- /.informations .container -->
       <div class="socials">
         <div class="container">
           <div class="btn">
@@ -58,15 +62,16 @@
           </div>
           <div class="left_icons">
             <h4>FOLLOW US</h4>
-            <img src="../assets/footer-facebook.png" alt="">
-            <img src="../assets/footer-twitter.png" alt="">
-            <img src="../assets/footer-youtube.png" alt="">
-            <img src="../assets/footer-pinterest.png" alt="">
-            <img src="../assets/footer-periscope.png" alt="">
+            <img src="../assets/footer-facebook.png" alt="logo grigio Facebook">
+            <img src="../assets/footer-twitter.png" alt="logo grigio Twitter">
+            <img src="../assets/footer-youtube.png" alt="logo grigio Youtube">
+            <img src="../assets/footer-pinterest.png" alt="logo grigio Pinterest">
+            <img src="../assets/footer-periscope.png" alt="logo grigio simbolo posizione">
           </div>
         </div>
         <!-- /.container -->
       </div>
+      <!-- /.socials -->
     </footer>
  <!-- /#site_footer -->
   </div>
@@ -82,6 +87,7 @@
   background-repeat: no-repeat;
   background-position-x: center;
   background-size: cover;
+/* informations */
 .informations {
   display: flex;
   justify-content: space-between;
@@ -119,6 +125,7 @@ ul {
   width: 500px;
 }
 }
+/* socials */
 .socials {
   background-color: #303030;
   padding: 2rem 0;
