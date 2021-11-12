@@ -16,6 +16,14 @@ export default {
 
 <style lang="scss">
 .thumb {
+  height: 200px;
+  padding: 1rem;
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+  }
   h5 {
     color: #fff;
     padding-top: 1rem;

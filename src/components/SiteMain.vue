@@ -145,7 +145,7 @@ export default {
 }
 /* site_main_content */
 .site_main_content {
-  padding: 2rem 0;
+  padding-bottom: 2rem;
   position: relative;
 .btn, .btn-current {
   background-color: $color_primary;
@@ -159,7 +159,7 @@ export default {
   }
 }
 .btn {
-   margin: auto;
+   margin: 5rem auto 0;
    width: 150px;
    & a {
     font-size: 0.8rem;
