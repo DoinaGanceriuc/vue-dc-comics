@@ -10,3 +10,11 @@ body {
   width: 1200px;
   margin: auto;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-2 {
+  width: calc(100% / 6);
+  padding: 1rem;
+}

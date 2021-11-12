@@ -14,5 +14,11 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+.thumb {
+  h5 {
+    color: #fff;
+    padding-top: 1rem;
+  }
+}
 </style>

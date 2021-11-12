@@ -3,8 +3,14 @@
     <main id="site_main">
       <div class="jumbo"></div>
        <div class="site_main_content container">
+         <div class="btn-current">
+            <a href="">CURRENT SERIES</a>
+          </div>
           <div class="thumbs row">
-            <Thumb v-for="thumb in thumbs" :key="thumb.id" :albumImage="thumb.thumb" :typeAlbum="thumb.series" />
+            <Thumb v-for="thumb in thumbs" :key="thumb.id" :albumImage="thumb.thumb" :typeAlbum="thumb.series.toUpperCase()" />
+          </div>
+         <div class="btn">
+            <a href="">LOAD MORE</a>
           </div>
        </div>
        <!-- /.site_main_content .containier -->
@@ -140,6 +146,31 @@ export default {
 /* site_main_content */
 .site_main_content {
   padding: 2rem 0;
+  position: relative;
+.btn, .btn-current {
+  background-color: $color_primary;
+  padding: 0.75rem;
+  text-align: center;
+
+  & a {
+    text-decoration: none;
+    color: $color_text_primary_main;
+    font-weight: bold;
+  }
+}
+.btn {
+   margin: auto;
+   width: 150px;
+   & a {
+    font-size: 0.8rem;
+  }
+}
+.btn-current {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 200px;
+}
 }
 h2, p {
   color: $color_text_primary_main;
