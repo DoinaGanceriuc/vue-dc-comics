@@ -1,6 +1,7 @@
 <template>
   <div>
     <main id="site_main">
+      <div class="jumbo"></div>
        <div class="site_main_content container">
           <h2> -- Content goes here -- </h2>
        </div>
@@ -43,12 +44,21 @@
 @import '../assets/scss/variables.scss';
 #site_main{
   background-color: $color_bg_primary ;
+.jumbo {
+  background-image: url("../assets/jumbotron.jpg");
+  background-repeat: no-repeat;
+ /*  background-position: center; */
+  background-size: cover;
+  height: 450px;
+}
+/* site_main_content */
 .site_main_content {
   padding: 2rem 0;
 }
 h2, p {
   color: $color_text_primary_main;
 }
+/* cards */
 .cards {
   background-color: $color_primary;
   padding: 2rem 0;
