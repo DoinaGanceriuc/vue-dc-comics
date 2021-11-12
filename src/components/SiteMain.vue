@@ -16,7 +16,8 @@
        <!-- /.site_main_content .containier -->
       <div class="cards">
         <div class="container">
-         <div class="card">
+          <div class="row">
+            <div class="card">
            <img width="50" src="../assets/buy-comics-digital-comics.png" alt="mini card bianca con scritta DC">
            <p>DIGITAL COMICS</p>
          </div>
@@ -29,13 +30,14 @@
            <p>SUBSCRIPTION</p>
          </div>
          <div class="card">
-           <img width="50" src="../assets/buy-comics-shop-locator.png" alt="simbolo della posizione bianco">
+           <img width="40" src="../assets/buy-comics-shop-locator.png" alt="simbolo della posizione bianco">
            <p>COMIC SHOP LOCATOR</p>
          </div>
          <div class="card">
            <img width="50" src="../assets/buy-dc-power-visa.svg" alt="mini simbolo bianco batteria">
            <p>DC POWER VISA</p>
          </div>
+          </div>
         </div>
         <!-- /.container -->
       </div>
@@ -135,12 +137,10 @@ export default {
 <style lang="scss">
 @import '../assets/scss/variables.scss';
 #site_main{
-  background-color: $color_bg_primary ;
+  background-color: $color_bg_primary;
 .jumbo {
   background-image: url("../assets/jumbotron.jpg");
-  background-repeat: no-repeat;
- /*  background-position: center; */
-  background-size: cover;
+  @include bg_image_cover_repeat;
   height: 450px;
 }
 /* site_main_content */
@@ -154,7 +154,7 @@ export default {
 
   & a {
     text-decoration: none;
-    color: $color_text_primary_main;
+    color: $color_text_primary;
     font-weight: bold;
   }
 }
@@ -173,7 +173,7 @@ export default {
 }
 }
 h2, p {
-  color: $color_text_primary_main;
+  color: $color_text_primary;
 }
 /* cards */
 .cards {
@@ -181,12 +181,9 @@ h2, p {
   padding: 2rem 0;
    display: flex;
   .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1.5rem;
   .card {
-    display: flex;
-    align-items: center;
+   @include dflex_align_center;
+    margin-right: 2.5rem;
 
     & img {
       margin-right: 1rem;

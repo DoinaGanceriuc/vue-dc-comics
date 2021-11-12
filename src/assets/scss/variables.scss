@@ -1,4 +1,19 @@
 $color_primary: #0282f9;
 $color_bg_primary: #1c1c1c;
-$color_text_primary_main: #fff;
+$color_text_primary: #fff;
 $font_size_header: 0.75rem;
+
+@mixin dflex_align_center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin dflex_just_between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin bg_image_cover_repeat {
+  background-repeat: no-repeat;
+  background-size: cover;
+}

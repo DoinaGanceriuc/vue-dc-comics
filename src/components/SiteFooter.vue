@@ -84,15 +84,12 @@
 @import '../assets/scss/variables.scss';
 #site_footer{
   background-image: url("../assets/footer-bg.jpg");
-  background-repeat: no-repeat;
+  @include bg_image_cover_repeat;
   background-position-x: center;
-  background-size: cover;
 /* informations */
 .informations {
-  display: flex;
-  justify-content: space-between;
+  @include dflex_just_between;
 .row {
- display: flex;
  padding: 2rem 0;
  width: 40%;
  .col-4 {
@@ -100,7 +97,7 @@
 
  }
 h3{
-  color: $color_text_primary_main;
+  color: $color_text_primary;
   padding-bottom: 0.5rem;
 }
 .list_shop {
@@ -118,9 +115,8 @@ ul {
 }
 .footer_logo {
   background-image: url("../assets/dc-logo-bg.png");
-  background-repeat: no-repeat;
+ @include bg_image_cover_repeat;
   background-position: center;
-  background-size: cover;
   height: 350px;
   width: 500px;
 }
@@ -130,8 +126,7 @@ ul {
   background-color: #303030;
   padding: 2rem 0;
   & .container {
-    display: flex;
-    justify-content: space-between;
+    @include dflex_just_between;
     align-items: center;
 .btn {
   border: 1px solid $color_primary;
@@ -139,15 +134,15 @@ ul {
 
   & a {
     text-decoration: none;
-    color: $color_text_primary_main;
+    color: $color_text_primary;
   }
 }
 .left_icons {
-  display: flex;
-  align-items: center;
+  @include dflex_align_center;
 
   & h4 {
   color: $color_primary;
+  margin-right: 1rem;
 }
   & img {
     padding: 0 0.5rem;

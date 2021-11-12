@@ -29,8 +29,7 @@
 <style lang="scss">
 @import '../assets/scss/variables.scss';
 #site_header{
-  display: flex;
-  justify-content: space-between;
+ @include dflex_just_between;
   align-items: end;
   padding-top: 2rem;
 /* logo */
